@@ -80,6 +80,11 @@ def route_overlap(name: str, seed: int, lr: float) -> np.ndarray:
 
 
 def main():
+    try:
+        import sys
+        sys.stdout.reconfigure(errors="replace")
+    except Exception:
+        pass
     os.makedirs(OUT, exist_ok=True)
     t0 = time.time()
     results = {"protocol": {"episodes_per_task": EPISODES, "n_eval": N_EVAL, "seeds": SEEDS,
@@ -159,11 +164,11 @@ def main():
     results["raw_matrices"] = {n: [matrix(r).round(3).tolist() for r in d["runs"]] for n, d in seq.items()}
     results["runtime_s"] = round(time.time() - t0, 1)
 
-    with open(os.path.join(OUT, "results.json"), "w") as f:
+    with open(os.path.join(OUT, "results.json"), "w", encoding="utf-8") as f:
         json.dump(results, f, indent=1)
     write_summary(results)
     plot(results)
-    print(open(os.path.join(OUT, "SUMMARY.md")).read())
+    print(open(os.path.join(OUT, "SUMMARY.md"), encoding="utf-8").read())
 
 
 def write_summary(res):
@@ -214,7 +219,7 @@ def write_summary(res):
                  ", ".join(f"{k}→{c:.2f}" for k, c in v["bell_only_corrections"].items()))
     L.append("")
     L.append(f"Runtime {res['runtime_s']} s.")
-    with open(os.path.join(OUT, "SUMMARY.md"), "w") as f:
+    with open(os.path.join(OUT, "SUMMARY.md"), "w", encoding="utf-8") as f:
         f.write("\n".join(L) + "\n")
 
 

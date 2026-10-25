@@ -124,6 +124,64 @@ the plain net here.
 - **Anything about real dendrites.** The routes are a computational stand-in
   for "each route stores its own cable function", not a model of a neuron.
 
+## Part 2: no shortcut teacher (merged with SimplyPutSol)
+
+Part 1 had a shortcut: the fumble loop was given the exact 2-D error vector to
+the hidden target. [SimplyPutSol](https://github.com/anttiluode/SimplyPutSol)
+removed it. There, learning sees only **two scalar sensor readings** per
+update (a paired probe), and a wind gust earlier in the episode must be
+remembered. Its cable network learned, but forgot: the bell went from 0.029 to
+0.714 after three more tasks. Plastic and frozen cables scored the same, so the
+learning lived in the shared readout, and that is where the forgetting lived.
+
+Part 2 keeps Sol's world, probes, frozen cable body and readout rule
+**exactly**, and changes one thing: the readout. Instead of one shared readout,
+16 routes each own a readout; the final frame picks 2 routes by resonance; a
+probe updates only the routes it travelled. Tunings start cue-neutral.
+Parameters were fixed before running ([`PREREGISTRATION.md`](PREREGISTRATION.md), Part 2).
+
+**Reproduction first:** the shared readout on Sol's seeds reproduces Sol's
+published numbers (bell 0.0288 → 0.7139, final 0.3949 vs 0.029 → 0.714, 0.395).
+
+![probe forgetting](results_probe/probe_forgetting.png)
+
+First-reach distance (contact at 0.12), 5 seeds:
+
+| World | Readout | params | bell just learned | bell after 3 more | final, 4 tasks | contact |
+|---|---|---:|---:|---:|---:|---:|
+| anchored (Sol's) | shared | 312 | 0.038 | 0.649 | 0.361 ± 0.046 | 30% |
+| | shared, 16× reservoir | 4992 | 0.071 | 0.510 | 0.397 ± 0.015 | 26% |
+| | **local** | 1160 | 0.054 | **0.056** | **0.069 ± 0.008** | **84%** |
+| | local, cue-blind | 1160 | 0.120 | 0.564 | 0.386 ± 0.022 | 26% |
+| relative (start posture matters) | shared | 312 | 0.147 | 1.048 | 0.576 ± 0.085 | 13% |
+| | shared, 16× reservoir | 4992 | 0.134 | 0.624 | 0.486 ± 0.066 | 12% |
+| | **local** | 1160 | 0.219 | **0.266** | **0.199 ± 0.010** | **36%** |
+| | local, cue-blind | 1160 | 0.333 | 0.829 | 0.499 ± 0.032 | 12% |
+
+All six pre-registered rules pass (reproduction, plus five per world). Full
+tables: [`results_probe/SUMMARY.md`](results_probe/SUMMARY.md).
+
+**What it shows:** the two halves found this morning combine. Sol's frozen
+cable body supplies the memory of the wind; route-local readouts supply
+retention; and learning still works from scalar probes alone. A shared readout
+over a 16× larger reservoir (more weights than all local readouts) still
+forgets, so the gain is not just more parameters. Removing the cue from the
+routing removes the retention.
+
+**What it doesn't show:**
+
+- **Novelty.** Frozen reservoir + mixture of local readouts, trained by
+  perturbation (weight-perturbation / node-perturbation family). Known parts.
+- **Free locality.** In the relative world, local learns the bell worse
+  (0.219 vs 0.147); splitting the readout costs learning quality. Retention
+  there is borderline (0.219 → 0.266, inside the pre-set +0.05 tolerance).
+- **No cue needed.** The routes still read an explicit task cue. Routing on
+  the body's own state, without being told the task, is untested.
+- **Sol's world is easier than it looks.** In the anchored world the start
+  posture has no effect on the answer (the action is added to a fixed
+  anchor), so the task is eight constants: four targets × two winds. That's
+  why the relative world is included.
+
 ## The natural next step
 
 The capacity sweep shows where this breaks: when every route is taken, new
@@ -135,8 +193,9 @@ testable form.
 
 ```bash
 pip install -r requirements.txt
-python run_experiment.py      # ~2 minutes on a CPU, writes results/
-python -m pytest -q           # 10 tests
+python run_experiment.py        # part 1, ~2 minutes on a CPU, writes results/
+python run_probe_experiment.py  # part 2, ~30 seconds, writes results_probe/
+python -m pytest -q             # 15 tests
 ```
 
 Pure NumPy; no GPU needed.
@@ -146,6 +205,8 @@ Pure NumPy; no GPU needed.
 - `simplyput/arm.py`: arm kinematics, targets, the corrective fumble loop
 - `simplyput/models.py`: the four controllers
 - `simplyput/protocol.py`: practice, evaluation, sequential and mixed runs
-- `run_experiment.py`: the full protocol, tables, plots
+- `run_experiment.py`: the full part 1 protocol, tables, plots
+- `simplyput/probe.py`: part 2, Sol's probe world ported exactly, shared vs local readouts
+- `run_probe_experiment.py`: part 2 protocol, rules, tables, plot
 - `PREREGISTRATION.md`: decision rules written before the main run
-- `tests/`: kinematics, fumble convergence, locality of route updates, no learning during evaluation
+- `tests/`: kinematics, fumble convergence, locality of route updates, no learning during evaluation, probe-world checks

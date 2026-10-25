@@ -1,0 +1,5608 @@
+{
+ "protocol": {
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "episodes_per_task": 650,
+  "eval_postures_per_task_per_wind": 80,
+  "feedback": "two scalar sensor readings per update (Sol's paired probes)"
+ },
+ "summary": {
+  "anchored": {
+   "shared": {
+    "parameters": 312,
+    "bell_learned": 0.03792276315339734,
+    "bell_final": 0.649071230190845,
+    "final": 0.36054535300072377,
+    "final_se": 0.045682533353395324,
+    "final_contact": 0.2971875,
+    "just_learned_each": [
+     0.038,
+     0.119,
+     0.031,
+     0.098
+    ],
+    "final_each": [
+     0.649071230190845,
+     0.30015600821190735,
+     0.3946766780145921,
+     0.09827749558555063
+    ],
+    "bell_curve": [
+     1.2998424691910573,
+     0.03792276315339734,
+     0.6524920633176359,
+     0.6582614889962668,
+     0.649071230190845
+    ]
+   },
+   "shared_big": {
+    "parameters": 4992,
+    "bell_learned": 0.07091543534928262,
+    "bell_final": 0.5100945618751513,
+    "final": 0.3967791719429751,
+    "final_se": 0.01512552270464377,
+    "final_contact": 0.255,
+    "just_learned_each": [
+     0.071,
+     0.182,
+     0.042,
+     0.083
+    ],
+    "final_each": [
+     0.5100945618751513,
+     0.33994267709962367,
+     0.654481535987944,
+     0.08259791280918147
+    ],
+    "bell_curve": [
+     1.1084539672317653,
+     0.07091543534928262,
+     0.35866666369607586,
+     0.3914826472458194,
+     0.5100945618751513
+    ]
+   },
+   "local": {
+    "parameters": 1160,
+    "bell_learned": 0.05374631180498046,
+    "bell_final": 0.05577548780622492,
+    "final": 0.0693837071929258,
+    "final_se": 0.007916855261247349,
+    "final_contact": 0.84375,
+    "just_learned_each": [
+     0.054,
+     0.084,
+     0.039,
+     0.097
+    ],
+    "final_each": [
+     0.05577548780622492,
+     0.08478020569543868,
+     0.03952977899368737,
+     0.09744935627635225
+    ],
+    "bell_curve": [
+     1.2998424691910573,
+     0.05374631180498046,
+     0.05619161275195883,
+     0.06672218737214106,
+     0.05577548780622492
+    ]
+   },
+   "local_cueblind": {
+    "parameters": 1160,
+    "bell_learned": 0.11992264517308289,
+    "bell_final": 0.5639597782106,
+    "final": 0.38618167962975714,
+    "final_se": 0.022026721130092852,
+    "final_contact": 0.2590625,
+    "just_learned_each": [
+     0.12,
+     0.091,
+     0.07,
+     0.079
+    ],
+    "final_each": [
+     0.5639597782106,
+     0.4717890153876535,
+     0.4302617347704373,
+     0.07871619015033793
+    ],
+    "bell_curve": [
+     1.2998424691910573,
+     0.11992264517308289,
+     0.8630054246777543,
+     0.8475387013565492,
+     0.5639597782106
+    ]
+   }
+  },
+  "relative": {
+   "shared": {
+    "parameters": 312,
+    "bell_learned": 0.14718750777470363,
+    "bell_final": 1.0475822772151138,
+    "final": 0.5756482581005917,
+    "final_se": 0.08529355348402833,
+    "final_contact": 0.13,
+    "just_learned_each": [
+     0.147,
+     0.216,
+     0.091,
+     0.188
+    ],
+    "final_each": [
+     1.0475822772151138,
+     0.4685428419363372,
+     0.5989006595550574,
+     0.18756725369585844
+    ],
+    "bell_curve": [
+     1.3644515836171296,
+     0.14718750777470363,
+     0.8842314543505516,
+     0.842956767178336,
+     1.0475822772151138
+    ]
+   },
+   "shared_big": {
+    "parameters": 4992,
+    "bell_learned": 0.13357908602497484,
+    "bell_final": 0.6242296353380057,
+    "final": 0.48624653498793863,
+    "final_se": 0.06606322771182047,
+    "final_contact": 0.118125,
+    "just_learned_each": [
+     0.134,
+     0.238,
+     0.097,
+     0.199
+    ],
+    "final_each": [
+     0.6242296353380057,
+     0.4051033215779647,
+     0.7162294847955794,
+     0.19942369824020495
+    ],
+    "bell_curve": [
+     1.2890787608714338,
+     0.13357908602497484,
+     0.5457615307658426,
+     0.41302092651210254,
+     0.6242296353380057
+    ]
+   },
+   "local": {
+    "parameters": 1160,
+    "bell_learned": 0.21863964219724868,
+    "bell_final": 0.26611474436012583,
+    "final": 0.1994933026332032,
+    "final_se": 0.009552301930645416,
+    "final_contact": 0.36375,
+    "just_learned_each": [
+     0.219,
+     0.207,
+     0.173,
+     0.151
+    ],
+    "final_each": [
+     0.26611474436012583,
+     0.20730438973671964,
+     0.17308517881974156,
+     0.15146889761622587
+    ],
+    "bell_curve": [
+     1.3644515836171296,
+     0.21863964219724868,
+     0.219028054452233,
+     0.22108044377974245,
+     0.26611474436012583
+    ]
+   },
+   "local_cueblind": {
+    "parameters": 1160,
+    "bell_learned": 0.3334512027060873,
+    "bell_final": 0.8291763153686761,
+    "final": 0.4989881976470075,
+    "final_se": 0.03240786819346442,
+    "final_contact": 0.118125,
+    "just_learned_each": [
+     0.333,
+     0.249,
+     0.173,
+     0.221
+    ],
+    "final_each": [
+     0.8291763153686761,
+     0.5338486280703154,
+     0.41200480552926216,
+     0.2209230416197764
+    ],
+    "bell_curve": [
+     1.3644515836171296,
+     0.3334512027060873,
+     0.9405454048784915,
+     0.9155744799880188,
+     0.8291763153686761
+    ]
+   }
+  }
+ },
+ "rules": {
+  "P0_reproduces_sol": {
+   "pass": true,
+   "measured": {
+    "bell_learned": 0.0288,
+    "bell_final": 0.7139,
+    "final": 0.3949
+   },
+   "sol": {
+    "bell_learned": 0.029,
+    "bell_final": 0.714,
+    "final": 0.395
+   }
+  },
+  "anchored": {
+   "P1_learning_survives": true,
+   "P2_retention": true,
+   "P3_beats_shared": true,
+   "P4_cueblind_fails_retention": true,
+   "P5_beats_param_matched_shared": true
+  },
+  "relative": {
+   "P1_learning_survives": true,
+   "P2_retention": true,
+   "P3_beats_shared": true,
+   "P4_cueblind_fails_retention": true,
+   "P5_beats_param_matched_shared": true
+  }
+ },
+ "runs": {
+  "anchored": {
+   "shared": [
+    {
+     "name": "shared",
+     "seed": 0,
+     "world": "anchored",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3887902122017277,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.9479618587205744,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8789944317262315,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3064347251162958,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.019710222114830308,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.450512630081744,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.9796932777992957,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3330172471638415,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0272870785983121,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.10313389158049673,
+         "contact": 0.66875
+        },
+        {
+         "task": "light",
+         "distance": 0.7541847363748516,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.6067273588116542,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.9594419536300431,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3052193950037562,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.025907507563497162,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.31070105843406404,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.1070745937848128,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.23953229816524862,
+         "contact": 0.29375
+        },
+        {
+         "task": "light",
+         "distance": 0.24553224602679627,
+         "contact": 0.25625
+        },
+        {
+         "task": "horn",
+         "distance": 0.07955176228362876,
+         "contact": 0.9875
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared",
+     "seed": 1,
+     "world": "anchored",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3111839602614854,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.204704970123163,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.6413858634831904,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3324890703640657,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.02005683659172658,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.3390910200985249,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7407527638000584,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.7281617407783217,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4714303133417549,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.06913010393420689,
+         "contact": 0.8625
+        },
+        {
+         "task": "light",
+         "distance": 0.7270888452931208,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.8116990206978727,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4219555329824079,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.31846282910757095,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.031215509538429588,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.949505487795793,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4764537690221927,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2259724220723979,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.6347514706188566,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.07261140523350931,
+         "contact": 1.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared",
+     "seed": 2,
+     "world": "anchored",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0096450568804365,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.355589085372662,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1112397287071634,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.140774733189112,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.04654349331654104,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.2829924906523031,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.094233873649749,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.553814284749345,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4690262154318946,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2175088918818581,
+         "contact": 0.08125
+        },
+        {
+         "task": "light",
+         "distance": 0.9307914630335358,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.8171914139781847,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4943154979155273,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.21699219232903913,
+         "contact": 0.0375
+        },
+        {
+         "task": "light",
+         "distance": 0.013970102945203853,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.823383866570753,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5581018951995118,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3308068568095307,
+         "contact": 0.05
+        },
+        {
+         "task": "light",
+         "distance": 0.6860198385028269,
+         "contact": 0.0125
+        },
+        {
+         "task": "horn",
+         "distance": 0.0828406473090467,
+         "contact": 0.975
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared",
+     "seed": 3,
+     "world": "anchored",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.4445524245643266,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.1917801817187352,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8267112803018634,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2682541157088902,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.017544438280621404,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.4122286732145122,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7368647874808747,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.7473213993896088,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2397316051027011,
+         "contact": 0.15625
+        },
+        {
+         "task": "switch",
+         "distance": 0.11603663281312662,
+         "contact": 0.59375
+        },
+        {
+         "task": "light",
+         "distance": 0.8278439160484206,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.93617863541701,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.353924071773389,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.19414677341086314,
+         "contact": 0.04375
+        },
+        {
+         "task": "light",
+         "distance": 0.042944303669443934,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.0518592441360821,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.23647720295637997,
+         "contact": 0.16875
+        },
+        {
+         "task": "switch",
+         "distance": 0.1566436636909334,
+         "contact": 0.375
+        },
+        {
+         "task": "light",
+         "distance": 0.17404754924031154,
+         "contact": 0.2875
+        },
+        {
+         "task": "horn",
+         "distance": 0.1775182931184081,
+         "contact": 0.225
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared",
+     "seed": 4,
+     "world": "anchored",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3450406920473104,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.0912742382676501,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8315508540203101,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.1779480725173037,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.08575882546326738,
+         "contact": 0.825
+        },
+        {
+         "task": "switch",
+         "distance": 1.9491756181321058,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7780830941385541,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.6042965396525535,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.054985104113517,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.08711390300536812,
+         "contact": 0.7625
+        },
+        {
+         "task": "light",
+         "distance": 0.8036872262871843,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.7905703782117721,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0616703886799668,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.05826914250811477,
+         "contact": 0.90625
+        },
+        {
+         "task": "light",
+         "distance": 0.03879945337063304,
+         "contact": 0.9875
+        },
+        {
+         "task": "horn",
+         "distance": 0.8297980708756384,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.8672486899913278,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.5478248003214263,
+         "contact": 0.08125
+        },
+        {
+         "task": "light",
+         "distance": 0.2330322856841694,
+         "contact": 0.25
+        },
+        {
+         "task": "horn",
+         "distance": 0.07886536998316022,
+         "contact": 0.98125
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "shared_big": [
+    {
+     "name": "shared_big",
+     "seed": 0,
+     "world": "anchored",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.4136063349441121,
+         "contact": 0.0125
+        },
+        {
+         "task": "switch",
+         "distance": 1.1885737651896178,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.5223844298630573,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.1193309083037222,
+         "contact": 0.0625
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.07191778005796733,
+         "contact": 0.85625
+        },
+        {
+         "task": "switch",
+         "distance": 0.7392678204504458,
+         "contact": 0.05625
+        },
+        {
+         "task": "light",
+         "distance": 1.2691053032554769,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.3811275264195425,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4457753167007744,
+         "contact": 0.03125
+        },
+        {
+         "task": "switch",
+         "distance": 0.21731951747889006,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.4170778527062013,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.5727386526132386,
+         "contact": 0.0375
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.3004304697653044,
+         "contact": 0.20625
+        },
+        {
+         "task": "switch",
+         "distance": 0.24336697408831248,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.03362028638834231,
+         "contact": 0.9625
+        },
+        {
+         "task": "horn",
+         "distance": 0.3772183510265351,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6049575968055072,
+         "contact": 0.0125
+        },
+        {
+         "task": "switch",
+         "distance": 0.278884301532899,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.5704828877971286,
+         "contact": 0.04375
+        },
+        {
+         "task": "horn",
+         "distance": 0.07738702982110356,
+         "contact": 0.975
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared_big",
+     "seed": 1,
+     "world": "anchored",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.8598927170793902,
+         "contact": 0.04375
+        },
+        {
+         "task": "switch",
+         "distance": 1.1930938671994014,
+         "contact": 0.05625
+        },
+        {
+         "task": "light",
+         "distance": 1.6402136342088052,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.1359037055987145,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.04366215602600551,
+         "contact": 0.975
+        },
+        {
+         "task": "switch",
+         "distance": 0.8554160312069682,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.4366850713358201,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.4402637891971835,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.16039204341620406,
+         "contact": 0.45
+        },
+        {
+         "task": "switch",
+         "distance": 0.08955201975169842,
+         "contact": 0.775
+        },
+        {
+         "task": "light",
+         "distance": 1.4823218596687446,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.4224937402544295,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5864227063006323,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.6869842179653183,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.03721872520929237,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.9036260531390383,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.341123419980532,
+         "contact": 0.05625
+        },
+        {
+         "task": "switch",
+         "distance": 0.3096409842134603,
+         "contact": 0.1375
+        },
+        {
+         "task": "light",
+         "distance": 0.9665995026064053,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.07793389257255087,
+         "contact": 1.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared_big",
+     "seed": 2,
+     "world": "anchored",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.9847100948026444,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.715391177023606,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.092580739678728,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 2.435525119039164,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.07499161841392729,
+         "contact": 0.83125
+        },
+        {
+         "task": "switch",
+         "distance": 2.0967069989473415,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1839487865905993,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 2.068923062332436,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.37798875107430124,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.21424682642621415,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.3334254115017903,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 2.542878137334479,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.34997135790009065,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3675434980853975,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.043028496806457296,
+         "contact": 0.99375
+        },
+        {
+         "task": "horn",
+         "distance": 2.392824368958581,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5933693706578309,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2953950525238033,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7627445079806114,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.0894352693095841,
+         "contact": 0.90625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared_big",
+     "seed": 3,
+     "world": "anchored",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5334116702201859,
+         "contact": 0.04375
+        },
+        {
+         "task": "switch",
+         "distance": 0.6835146788864981,
+         "contact": 0.0625
+        },
+        {
+         "task": "light",
+         "distance": 0.43511126688641844,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.131628804378461,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.07020561971813966,
+         "contact": 0.9875
+        },
+        {
+         "task": "switch",
+         "distance": 0.6403088195568245,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.16271520062282968,
+         "contact": 0.475
+        },
+        {
+         "task": "horn",
+         "distance": 1.0948572880673084,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2766296954267185,
+         "contact": 0.05625
+        },
+        {
+         "task": "switch",
+         "distance": 0.17212907972964392,
+         "contact": 0.38125
+        },
+        {
+         "task": "light",
+         "distance": 0.23140977844079808,
+         "contact": 0.18125
+        },
+        {
+         "task": "horn",
+         "distance": 1.0063088438143146,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.30848853223296746,
+         "contact": 0.24375
+        },
+        {
+         "task": "switch",
+         "distance": 0.2734927087159151,
+         "contact": 0.225
+        },
+        {
+         "task": "light",
+         "distance": 0.03524670623458045,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.9922024175283177,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.453712085312875,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2629393592571402,
+         "contact": 0.0125
+        },
+        {
+         "task": "light",
+         "distance": 0.5976825875362944,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.08753034255311716,
+         "contact": 0.95625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared_big",
+     "seed": 4,
+     "world": "anchored",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.7506490191124933,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 2.045776773138941,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8812584455917924,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.7845033405987472,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.09380000253037327,
+         "contact": 0.76875
+        },
+        {
+         "task": "switch",
+         "distance": 2.048565972772066,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7885788523403248,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.659060426895909,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.532547511862381,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.21622865422320459,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.177057449369451,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.7592009118011576,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.41210017003010213,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.4574657151235845,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.0625838457410453,
+         "contact": 0.98125
+        },
+        {
+         "task": "horn",
+         "distance": 1.7600150933748282,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5573103366190113,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.5528536879708156,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.3748981940192803,
+         "contact": 0.0125
+        },
+        {
+         "task": "horn",
+         "distance": 0.0807030297895517,
+         "contact": 0.9875
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "local": [
+    {
+     "name": "local",
+     "seed": 0,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3887902122017277,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.9479618587205744,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8789944317262315,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3064347251162958,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.052704680934636185,
+         "contact": 0.9875
+        },
+        {
+         "task": "switch",
+         "distance": 1.2269188951711345,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.9700736007348819,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2073013384116673,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.05336488346134578,
+         "contact": 0.98125
+        },
+        {
+         "task": "switch",
+         "distance": 0.0793972215861442,
+         "contact": 0.79375
+        },
+        {
+         "task": "light",
+         "distance": 0.7992567354170216,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.4128968162063893,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.053684276641683314,
+         "contact": 0.975
+        },
+        {
+         "task": "switch",
+         "distance": 0.07950864367164985,
+         "contact": 0.79375
+        },
+        {
+         "task": "light",
+         "distance": 0.04840525802234009,
+         "contact": 0.9375
+        },
+        {
+         "task": "horn",
+         "distance": 1.2978355606178769,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.050446965178182125,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.07950864367164985,
+         "contact": 0.79375
+        },
+        {
+         "task": "light",
+         "distance": 0.04870951746895408,
+         "contact": 0.9375
+        },
+        {
+         "task": "horn",
+         "distance": 0.0912586978349311,
+         "contact": 0.79375
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local",
+     "seed": 1,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3111839602614854,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.204704970123163,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.6413858634831904,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3324890703640655,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.046613666224731475,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.3397224491323423,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.6984373823551334,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.1535482876224061,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.04680820197520398,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.04228958952036761,
+         "contact": 0.925
+        },
+        {
+         "task": "light",
+         "distance": 0.5703591049554922,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.25150710821667,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.04679740136928608,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.04223327194269433,
+         "contact": 0.925
+        },
+        {
+         "task": "light",
+         "distance": 0.0451522559805128,
+         "contact": 0.98125
+        },
+        {
+         "task": "horn",
+         "distance": 1.3619444323256082,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.04662447213744685,
+         "contact": 1.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.04126737071356819,
+         "contact": 0.925
+        },
+        {
+         "task": "light",
+         "distance": 0.04515060878888314,
+         "contact": 0.98125
+        },
+        {
+         "task": "horn",
+         "distance": 0.04332679726616009,
+         "contact": 1.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local",
+     "seed": 2,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0096450568804365,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.355589085372662,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1112397287071634,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.140774733189112,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.06480345417027569,
+         "contact": 0.9125
+        },
+        {
+         "task": "switch",
+         "distance": 1.5462835940423745,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.2944369910739302,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.7210924874747605,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.06925514712441076,
+         "contact": 0.875
+        },
+        {
+         "task": "switch",
+         "distance": 0.1018560541196832,
+         "contact": 0.64375
+        },
+        {
+         "task": "light",
+         "distance": 1.027707014885213,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.8354498317349897,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.06954582045940079,
+         "contact": 0.875
+        },
+        {
+         "task": "switch",
+         "distance": 0.1018560541196832,
+         "contact": 0.64375
+        },
+        {
+         "task": "light",
+         "distance": 0.027347354409822368,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.0783287828972363,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.06452403103596692,
+         "contact": 0.925
+        },
+        {
+         "task": "switch",
+         "distance": 0.1018560541196832,
+         "contact": 0.64375
+        },
+        {
+         "task": "light",
+         "distance": 0.027770285579386277,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.1449501865456655,
+         "contact": 0.50625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local",
+     "seed": 3,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.4445524245643269,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.1917801817187352,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8267112803018634,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2682541157088902,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.0632484592818037,
+         "contact": 0.89375
+        },
+        {
+         "task": "switch",
+         "distance": 1.3416921804386854,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.9126370325145224,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.036508140324846,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.06979325696411494,
+         "contact": 0.85625
+        },
+        {
+         "task": "switch",
+         "distance": 0.1366615413212618,
+         "contact": 0.43125
+        },
+        {
+         "task": "light",
+         "distance": 0.8394380577820886,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.1839339855927005,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.12220449808242115,
+         "contact": 0.71875
+        },
+        {
+         "task": "switch",
+         "distance": 0.13697917339076576,
+         "contact": 0.425
+        },
+        {
+         "task": "light",
+         "distance": 0.03799172661191909,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.1121368647909329,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.07590303037161475,
+         "contact": 0.81875
+        },
+        {
+         "task": "switch",
+         "distance": 0.13697917339076576,
+         "contact": 0.425
+        },
+        {
+         "task": "light",
+         "distance": 0.03896375094307895,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.09858597368373029,
+         "contact": 0.69375
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local",
+     "seed": 4,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3450406920473104,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.0912742382676501,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8315508540203101,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.1779480725173037,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.041361298413455275,
+         "contact": 0.98125
+        },
+        {
+         "task": "switch",
+         "distance": 1.4723012727901075,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8924900006252591,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.8492715819275265,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.041736574234718736,
+         "contact": 0.98125
+        },
+        {
+         "task": "switch",
+         "distance": 0.05843438240902228,
+         "contact": 0.89375
+        },
+        {
+         "task": "light",
+         "distance": 0.7996452565247927,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.0316287496064263,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.04137894030791396,
+         "contact": 0.9875
+        },
+        {
+         "task": "switch",
+         "distance": 0.05621149215853054,
+         "contact": 0.90625
+        },
+        {
+         "task": "light",
+         "distance": 0.03725170386048035,
+         "contact": 0.98125
+        },
+        {
+         "task": "horn",
+         "distance": 1.0561035583446556,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.04137894030791396,
+         "contact": 0.9875
+        },
+        {
+         "task": "switch",
+         "distance": 0.06428978658152636,
+         "contact": 0.84375
+        },
+        {
+         "task": "light",
+         "distance": 0.03705473218813442,
+         "contact": 0.9875
+        },
+        {
+         "task": "horn",
+         "distance": 0.10912512605127425,
+         "contact": 0.6125
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "local_cueblind": [
+    {
+     "name": "local_cueblind",
+     "seed": 0,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3887902122017277,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.9479618587205744,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8789944317262315,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3064347251162958,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.11530995001756705,
+         "contact": 0.5875
+        },
+        {
+         "task": "switch",
+         "distance": 1.8044632484852428,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1720677329020845,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.7920187062282023,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.164176563884796,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.0861299458830767,
+         "contact": 0.79375
+        },
+        {
+         "task": "light",
+         "distance": 0.7119792504349265,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.6683694963052917,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.1644261600469688,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3958142151582876,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.04799321036588098,
+         "contact": 0.925
+        },
+        {
+         "task": "horn",
+         "distance": 1.6490721206164047,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.9683773063394906,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.4849708085012613,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.22787994290387484,
+         "contact": 0.38125
+        },
+        {
+         "task": "horn",
+         "distance": 0.059841025028082695,
+         "contact": 0.9625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local_cueblind",
+     "seed": 1,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3111839602614854,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.204704970123163,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.6413858634831904,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3324890703640655,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.12760781556410067,
+         "contact": 0.575
+        },
+        {
+         "task": "switch",
+         "distance": 1.4046801465317469,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7295134110427807,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.678730090049515,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5942278428207002,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.08317814822756515,
+         "contact": 0.83125
+        },
+        {
+         "task": "light",
+         "distance": 0.759402827939241,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.0657574181108989,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.49463398500378125,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.5004450642314524,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.07787180856828327,
+         "contact": 0.78125
+        },
+        {
+         "task": "horn",
+         "distance": 1.1111334611842785,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.364656468413874,
+         "contact": 0.06875
+        },
+        {
+         "task": "switch",
+         "distance": 0.4016634415140321,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.5251500766658237,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.07590014171686699,
+         "contact": 0.8625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local_cueblind",
+     "seed": 2,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0096450568804365,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.355589085372662,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1112397287071634,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.140774733189112,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.13466132154154647,
+         "contact": 0.4375
+        },
+        {
+         "task": "switch",
+         "distance": 1.5643637370388666,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.2641906377686793,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.4513104478469387,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.8212050782636094,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.09218051292160348,
+         "contact": 0.7375
+        },
+        {
+         "task": "light",
+         "distance": 0.780667213285805,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.9804471333928045,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.8191839520562956,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.470667629863866,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.07191585426326927,
+         "contact": 0.9625
+        },
+        {
+         "task": "horn",
+         "distance": 1.1432834645686225,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.396626823050703,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.5255914406261398,
+         "contact": 0.0375
+        },
+        {
+         "task": "light",
+         "distance": 0.6974546482366553,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.0845778368783662,
+         "contact": 0.8
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local_cueblind",
+     "seed": 3,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.4445524245643269,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.1917801817187352,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8267112803018634,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2682541157088902,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.10163618044445746,
+         "contact": 0.73125
+        },
+        {
+         "task": "switch",
+         "distance": 1.8604397742317225,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.0197432864065803,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.5379319851325448,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6556519600279442,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.09453023620447601,
+         "contact": 0.78125
+        },
+        {
+         "task": "light",
+         "distance": 0.7478484881153269,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2805399888575248,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6691058644096337,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.459393587799827,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.06969354841204325,
+         "contact": 0.80625
+        },
+        {
+         "task": "horn",
+         "distance": 1.3500844672924353,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.24238964747828282,
+         "contact": 0.05
+        },
+        {
+         "task": "switch",
+         "distance": 0.7257293328003105,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.5414882261774204,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.09396927990682147,
+         "contact": 0.71875
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local_cueblind",
+     "seed": 4,
+     "world": "anchored",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3450406920473104,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.0912742382676501,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8315508540203101,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.1779480725173037,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.1203979582977428,
+         "contact": 0.6
+        },
+        {
+         "task": "switch",
+         "distance": 1.8506510540272718,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.878458332026091,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.46692081302119615,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.079765678391722,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.10120214483608928,
+         "contact": 0.65
+        },
+        {
+         "task": "light",
+         "distance": 0.7744112862385195,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.954624321424153,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0903435452660661,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.17171402504767155,
+         "contact": 0.25
+        },
+        {
+         "task": "light",
+         "distance": 0.08265208580086818,
+         "contact": 0.76875
+        },
+        {
+         "task": "horn",
+         "distance": 1.0168728917041154,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.8477486457706493,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.22099005349652395,
+         "contact": 0.225
+        },
+        {
+         "task": "light",
+         "distance": 0.159335779868412,
+         "contact": 0.29375
+        },
+        {
+         "task": "horn",
+         "distance": 0.07929266722155223,
+         "contact": 0.78125
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "relative": {
+   "shared": [
+    {
+     "name": "shared",
+     "seed": 0,
+     "world": "relative",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.4039946280259994,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.2121952250784136,
+         "contact": 0.00625
+        },
+        {
+         "task": "light",
+         "distance": 1.076121359827211,
+         "contact": 0.025
+        },
+        {
+         "task": "horn",
+         "distance": 1.6236583683220267,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.12335847924367283,
+         "contact": 0.4875
+        },
+        {
+         "task": "switch",
+         "distance": 1.631424747308028,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7069314775909102,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.7294672210054017,
+         "contact": 0.11875
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.9731831499088772,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2620193628848231,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.9750175363829576,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.686773146051287,
+         "contact": 0.06875
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0997523189211518,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.6154930683655658,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.14017074893819123,
+         "contact": 0.50625
+        },
+        {
+         "task": "horn",
+         "distance": 1.1492660376920332,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.5778868832592672,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.4836837107595942,
+         "contact": 0.03125
+        },
+        {
+         "task": "light",
+         "distance": 0.34087318935816296,
+         "contact": 0.06875
+        },
+        {
+         "task": "horn",
+         "distance": 0.31309698747595754,
+         "contact": 0.11875
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared",
+     "seed": 1,
+     "world": "relative",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3486602036988906,
+         "contact": 0.00625
+        },
+        {
+         "task": "switch",
+         "distance": 1.4122285253546043,
+         "contact": 0.025
+        },
+        {
+         "task": "light",
+         "distance": 0.8722409294740157,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.4869033675633945,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.1330328659708752,
+         "contact": 0.53125
+        },
+        {
+         "task": "switch",
+         "distance": 1.1379912115094037,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7457872648325425,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.0132682547266376,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6071323666753988,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.21849976890627004,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.2220490972136804,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2442139588393826,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.46902167588528665,
+         "contact": 0.2125
+        },
+        {
+         "task": "switch",
+         "distance": 0.63202752633501,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.051873881254015354,
+         "contact": 0.94375
+        },
+        {
+         "task": "horn",
+         "distance": 1.2016531719265162,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6116403428201892,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.49215809535175686,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8548202969824947,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.11137409996812533,
+         "contact": 0.675
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared",
+     "seed": 2,
+     "world": "relative",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.2474228662250264,
+         "contact": 0.01875
+        },
+        {
+         "task": "switch",
+         "distance": 1.484539509528785,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1879330606950536,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.3749299689566417,
+         "contact": 0.025
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.18232947219562773,
+         "contact": 0.1625
+        },
+        {
+         "task": "switch",
+         "distance": 1.0514927526579032,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7733029520308624,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.6830300116905701,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5879931044153899,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.16771065934755583,
+         "contact": 0.3875
+        },
+        {
+         "task": "light",
+         "distance": 0.9327317295237035,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.35379154196595197,
+         "contact": 0.125
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.31212729764602437,
+         "contact": 0.25
+        },
+        {
+         "task": "switch",
+         "distance": 0.41869911915767943,
+         "contact": 0.0125
+        },
+        {
+         "task": "light",
+         "distance": 0.054283628282305284,
+         "contact": 0.9375
+        },
+        {
+         "task": "horn",
+         "distance": 0.5847144951035526,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5631599874817932,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.41709112326425035,
+         "contact": 0.0875
+        },
+        {
+         "task": "light",
+         "distance": 0.7795316243246065,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 0.23960188117510212,
+         "contact": 0.35625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared",
+     "seed": 3,
+     "world": "relative",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.5028286751724729,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.352092772119874,
+         "contact": 0.00625
+        },
+        {
+         "task": "light",
+         "distance": 0.972367468194145,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3550643868015082,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.11014530308964358,
+         "contact": 0.6625
+        },
+        {
+         "task": "switch",
+         "distance": 1.2892632341683774,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.38465557253210847,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.3010336169389525,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.15146545956685753,
+         "contact": 0.3375
+        },
+        {
+         "task": "switch",
+         "distance": 0.1900300985674473,
+         "contact": 0.2125
+        },
+        {
+         "task": "light",
+         "distance": 0.4073043841185493,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.5504021848706758,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2339461068193927,
+         "contact": 0.1125
+        },
+        {
+         "task": "switch",
+         "distance": 0.40720432771743925,
+         "contact": 0.06875
+        },
+        {
+         "task": "light",
+         "distance": 0.07309524938243787,
+         "contact": 0.84375
+        },
+        {
+         "task": "horn",
+         "distance": 0.6408079768933154,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6407364678790796,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.21537862289630222,
+         "contact": 0.19375
+        },
+        {
+         "task": "light",
+         "distance": 0.3974165474084254,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.10952093860240537,
+         "contact": 0.68125
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared",
+     "seed": 4,
+     "world": "relative",
+     "parameters": 312,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3193515449632585,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.3400797956871515,
+         "contact": 0.0125
+        },
+        {
+         "task": "light",
+         "distance": 1.021553140933327,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3788654027931317,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.1870714183736988,
+         "contact": 0.2625
+        },
+        {
+         "task": "switch",
+         "distance": 2.4937527587790114,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1909353520580592,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.16650881092028,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 2.101383191186235,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2440647214826417,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.8767423106751707,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.49819822086665333,
+         "contact": 0.0875
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 2.0999364366198243,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3923827821962135,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.13436465905031061,
+         "contact": 0.38125
+        },
+        {
+         "task": "horn",
+         "distance": 0.3832273531928721,
+         "contact": 0.06875
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.8444877046352395,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.7344026574097824,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.6218616397015975,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 0.1642423612577017,
+         "contact": 0.375
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "shared_big": [
+    {
+     "name": "shared_big",
+     "seed": 0,
+     "world": "relative",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.5023140107752795,
+         "contact": 0.025
+        },
+        {
+         "task": "switch",
+         "distance": 1.4106194777340568,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.549604953680241,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2693538269192661,
+         "contact": 0.075
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.1425206803228929,
+         "contact": 0.40625
+        },
+        {
+         "task": "switch",
+         "distance": 0.9750472465962747,
+         "contact": 0.0375
+        },
+        {
+         "task": "light",
+         "distance": 1.3038410799071092,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.533203759114786,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5911253852584982,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2291367835787459,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.438405167147066,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.7399187810699998,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4212722980616174,
+         "contact": 0.08125
+        },
+        {
+         "task": "switch",
+         "distance": 0.2565893947903023,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.05337303573146486,
+         "contact": 1.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.40614660187165874,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.614292145533106,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.320387426360116,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.6310575026130598,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 0.09972418622206661,
+         "contact": 0.825
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared_big",
+     "seed": 1,
+     "world": "relative",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0227733019139005,
+         "contact": 0.00625
+        },
+        {
+         "task": "switch",
+         "distance": 1.2591517738470277,
+         "contact": 0.01875
+        },
+        {
+         "task": "light",
+         "distance": 1.5495584056368124,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.4476811723133642,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.12636971419252396,
+         "contact": 0.5625
+        },
+        {
+         "task": "switch",
+         "distance": 0.6950834662884895,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.3775201446460272,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.4473553321399688,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5854027258620451,
+         "contact": 0.0625
+        },
+        {
+         "task": "switch",
+         "distance": 0.2350404749926179,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.8619040870547354,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.8980668542786947,
+         "contact": 0.025
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4309910014360569,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.551696921163954,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.0668600669555646,
+         "contact": 0.95
+        },
+        {
+         "task": "horn",
+         "distance": 1.775301456859792,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.8989465627676188,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.33807405880883135,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.4539643886443905,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.10612191504249358,
+         "contact": 0.6625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared_big",
+     "seed": 2,
+     "world": "relative",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.95454548010308,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.8075533776727508,
+         "contact": 0.0125
+        },
+        {
+         "task": "light",
+         "distance": 1.3599156021299985,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 2.076782493978644,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.12996762279921162,
+         "contact": 0.55625
+        },
+        {
+         "task": "switch",
+         "distance": 1.9832754604232168,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.0346788756749432,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 2.1479356042395503,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.3551024545913014,
+         "contact": 0.23125
+        },
+        {
+         "task": "switch",
+         "distance": 0.2535843236593096,
+         "contact": 0.25625
+        },
+        {
+         "task": "light",
+         "distance": 1.1076713464025232,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 2.5823720949056748,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.35755424136795916,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3260926619129496,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.06169000312734478,
+         "contact": 0.9125
+        },
+        {
+         "task": "horn",
+         "distance": 2.492495730102943,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6115715415483453,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2860222099084154,
+         "contact": 0.06875
+        },
+        {
+         "task": "light",
+         "distance": 0.6023778408850714,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.14843464640529064,
+         "contact": 0.45625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared_big",
+     "seed": 3,
+     "world": "relative",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.900774117095068,
+         "contact": 0.025
+        },
+        {
+         "task": "switch",
+         "distance": 1.141272429887603,
+         "contact": 0.025
+        },
+        {
+         "task": "light",
+         "distance": 0.5799976978444745,
+         "contact": 0.0375
+        },
+        {
+         "task": "horn",
+         "distance": 1.3132138012543622,
+         "contact": 0.01875
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.10022195009044008,
+         "contact": 0.6875
+        },
+        {
+         "task": "switch",
+         "distance": 0.7250882975341597,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.24782675882835417,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.169459875368029,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6765063011710631,
+         "contact": 0.05625
+        },
+        {
+         "task": "switch",
+         "distance": 0.24264419238514295,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.6540673846622587,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.92031242687616,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.44694971366647956,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3253950052934171,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.1921175205120827,
+         "contact": 0.48125
+        },
+        {
+         "task": "horn",
+         "distance": 1.065665802785798,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.30248679490789476,
+         "contact": 0.09375
+        },
+        {
+         "task": "switch",
+         "distance": 0.349083471783098,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.22647422285913804,
+         "contact": 0.16875
+        },
+        {
+         "task": "horn",
+         "distance": 0.44607964741421047,
+         "contact": 0.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "shared_big",
+     "seed": 4,
+     "world": "relative",
+     "parameters": 4992,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.0649868944698404,
+         "contact": 0.0125
+        },
+        {
+         "task": "switch",
+         "distance": 1.962381201200677,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.0680708371166108,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.7133145231886586,
+         "contact": 0.04375
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.16881546271980566,
+         "contact": 0.325
+        },
+        {
+         "task": "switch",
+         "distance": 1.9962339773291653,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7056536634529598,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.8592817594958255,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5206707869463051,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.22887810913616327,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.9820677739232739,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 2.0605369855166593,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.40833737802839976,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.5394884929342237,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.10889542735755205,
+         "contact": 0.625
+        },
+        {
+         "task": "horn",
+         "distance": 1.9687552127337675,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6938511319330639,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.7319494410293624,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.667273468976237,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 0.19675809611696346,
+         "contact": 0.075
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "local": [
+    {
+     "name": "local",
+     "seed": 0,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.4039946280259994,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.2121952250784136,
+         "contact": 0.00625
+        },
+        {
+         "task": "light",
+         "distance": 1.076121359827211,
+         "contact": 0.025
+        },
+        {
+         "task": "horn",
+         "distance": 1.6236583683220267,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2008693188288392,
+         "contact": 0.225
+        },
+        {
+         "task": "switch",
+         "distance": 1.3048688370698112,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1121329230564694,
+         "contact": 0.01875
+        },
+        {
+         "task": "horn",
+         "distance": 1.5859299739010917,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.20020417765177853,
+         "contact": 0.225
+        },
+        {
+         "task": "switch",
+         "distance": 0.2997941754909491,
+         "contact": 0.01875
+        },
+        {
+         "task": "light",
+         "distance": 1.0734990920435306,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.5992810870393548,
+         "contact": 0.01875
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.20046792156677024,
+         "contact": 0.225
+        },
+        {
+         "task": "switch",
+         "distance": 0.29981856265961493,
+         "contact": 0.01875
+        },
+        {
+         "task": "light",
+         "distance": 0.21292663037615825,
+         "contact": 0.325
+        },
+        {
+         "task": "horn",
+         "distance": 1.432711479670052,
+         "contact": 0.01875
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.1987446975794499,
+         "contact": 0.225
+        },
+        {
+         "task": "switch",
+         "distance": 0.29981856265961493,
+         "contact": 0.01875
+        },
+        {
+         "task": "light",
+         "distance": 0.2129836362234455,
+         "contact": 0.325
+        },
+        {
+         "task": "horn",
+         "distance": 0.17954991914033136,
+         "contact": 0.56875
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local",
+     "seed": 1,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3486602036988908,
+         "contact": 0.00625
+        },
+        {
+         "task": "switch",
+         "distance": 1.4122285253546043,
+         "contact": 0.025
+        },
+        {
+         "task": "light",
+         "distance": 0.8722409294740157,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.4869033675633947,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2152988440512745,
+         "contact": 0.175
+        },
+        {
+         "task": "switch",
+         "distance": 1.4626447982256259,
+         "contact": 0.0125
+        },
+        {
+         "task": "light",
+         "distance": 0.8838955659881819,
+         "contact": 0.0125
+        },
+        {
+         "task": "horn",
+         "distance": 1.3843709575105554,
+         "contact": 0.01875
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2145044074116337,
+         "contact": 0.175
+        },
+        {
+         "task": "switch",
+         "distance": 0.22479045545322238,
+         "contact": 0.125
+        },
+        {
+         "task": "light",
+         "distance": 0.7872424778920368,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.465652690269001,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2141343588854981,
+         "contact": 0.175
+        },
+        {
+         "task": "switch",
+         "distance": 0.2244999942064448,
+         "contact": 0.125
+        },
+        {
+         "task": "light",
+         "distance": 0.2198813817436185,
+         "contact": 0.28125
+        },
+        {
+         "task": "horn",
+         "distance": 1.4436219741023884,
+         "contact": 0.01875
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.21348377784469846,
+         "contact": 0.175
+        },
+        {
+         "task": "switch",
+         "distance": 0.22598488495429322,
+         "contact": 0.125
+        },
+        {
+         "task": "light",
+         "distance": 0.21952728092148838,
+         "contact": 0.275
+        },
+        {
+         "task": "horn",
+         "distance": 0.13603783977693512,
+         "contact": 0.63125
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local",
+     "seed": 2,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.2474228662250264,
+         "contact": 0.01875
+        },
+        {
+         "task": "switch",
+         "distance": 1.484539509528785,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1879330606950536,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.3749299689566417,
+         "contact": 0.025
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.22274946613274027,
+         "contact": 0.1375
+        },
+        {
+         "task": "switch",
+         "distance": 1.5343197608557082,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.2421212140814248,
+         "contact": 0.0125
+        },
+        {
+         "task": "horn",
+         "distance": 1.169216893676176,
+         "contact": 0.025
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.22308866719249343,
+         "contact": 0.13125
+        },
+        {
+         "task": "switch",
+         "distance": 0.1412229574298587,
+         "contact": 0.46875
+        },
+        {
+         "task": "light",
+         "distance": 1.042502122010714,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2136886649741352,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2251095753301667,
+         "contact": 0.125
+        },
+        {
+         "task": "switch",
+         "distance": 0.1412229574298587,
+         "contact": 0.46875
+        },
+        {
+         "task": "light",
+         "distance": 0.07212879601766034,
+         "contact": 0.8125
+        },
+        {
+         "task": "horn",
+         "distance": 1.4691078820660188,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2247755327043798,
+         "contact": 0.125
+        },
+        {
+         "task": "switch",
+         "distance": 0.1412229574298587,
+         "contact": 0.46875
+        },
+        {
+         "task": "light",
+         "distance": 0.07675900344281125,
+         "contact": 0.79375
+        },
+        {
+         "task": "horn",
+         "distance": 0.2201240231492358,
+         "contact": 0.29375
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local",
+     "seed": 3,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.5028286751724729,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.352092772119874,
+         "contact": 0.00625
+        },
+        {
+         "task": "light",
+         "distance": 0.972367468194145,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3550643868015082,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.21061630042502597,
+         "contact": 0.325
+        },
+        {
+         "task": "switch",
+         "distance": 1.395795632487764,
+         "contact": 0.00625
+        },
+        {
+         "task": "light",
+         "distance": 0.9596866109593524,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.2818366308919102,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.21362905904431537,
+         "contact": 0.30625
+        },
+        {
+         "task": "switch",
+         "distance": 0.21430320337546,
+         "contact": 0.175
+        },
+        {
+         "task": "light",
+         "distance": 0.9391484800808986,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2173361561660359,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2219785881486506,
+         "contact": 0.3125
+        },
+        {
+         "task": "switch",
+         "distance": 0.21422501044977435,
+         "contact": 0.175
+        },
+        {
+         "task": "light",
+         "distance": 0.0744432319340208,
+         "contact": 0.8625
+        },
+        {
+         "task": "horn",
+         "distance": 1.2340048808287634,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.4498579387044743,
+         "contact": 0.25
+        },
+        {
+         "task": "switch",
+         "distance": 0.21422501044977435,
+         "contact": 0.175
+        },
+        {
+         "task": "light",
+         "distance": 0.07348872351803175,
+         "contact": 0.8625
+        },
+        {
+         "task": "horn",
+         "distance": 0.10795626008348044,
+         "contact": 0.65625
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local",
+     "seed": 4,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3193515449632585,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.3400797956871515,
+         "contact": 0.0125
+        },
+        {
+         "task": "light",
+         "distance": 1.021553140933327,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.378865402793132,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.24366428154836345,
+         "contact": 0.1375
+        },
+        {
+         "task": "switch",
+         "distance": 1.4421805790010533,
+         "contact": 0.0125
+        },
+        {
+         "task": "light",
+         "distance": 1.032086761975578,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2413496581285657,
+         "contact": 0.0375
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.243713960960944,
+         "contact": 0.1375
+        },
+        {
+         "task": "switch",
+         "distance": 0.15678633279805437,
+         "contact": 0.3875
+        },
+        {
+         "task": "light",
+         "distance": 1.005637665793763,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.2380893401198183,
+         "contact": 0.04375
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.24371177496762658,
+         "contact": 0.1375
+        },
+        {
+         "task": "switch",
+         "distance": 0.15411037570808436,
+         "contact": 0.40625
+        },
+        {
+         "task": "light",
+         "distance": 0.28353698283364037,
+         "contact": 0.11875
+        },
+        {
+         "task": "horn",
+         "distance": 1.1843233563090199,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.24371177496762658,
+         "contact": 0.1375
+        },
+        {
+         "task": "switch",
+         "distance": 0.15527053319005693,
+         "contact": 0.3875
+        },
+        {
+         "task": "light",
+         "distance": 0.2826672499929309,
+         "contact": 0.11875
+        },
+        {
+         "task": "horn",
+         "distance": 0.1136764459311466,
+         "contact": 0.6625
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "local_cueblind": [
+    {
+     "name": "local_cueblind",
+     "seed": 0,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.4039946280259994,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.2121952250784136,
+         "contact": 0.00625
+        },
+        {
+         "task": "light",
+         "distance": 1.076121359827211,
+         "contact": 0.025
+        },
+        {
+         "task": "horn",
+         "distance": 1.6236583683220267,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.3705741923671405,
+         "contact": 0.175
+        },
+        {
+         "task": "switch",
+         "distance": 1.8386053009921377,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.18425192175494,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.4976000921924641,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3142590703307555,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2743032794720938,
+         "contact": 0.15
+        },
+        {
+         "task": "light",
+         "distance": 0.7559293823758279,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.8211506188945925,
+         "contact": 0.00625
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.2300659924287074,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3855269680279241,
+         "contact": 0.03125
+        },
+        {
+         "task": "light",
+         "distance": 0.16100023402828634,
+         "contact": 0.34375
+        },
+        {
+         "task": "horn",
+         "distance": 1.7643641573750002,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.1818362022866924,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.6554211567034409,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.25170808404369477,
+         "contact": 0.21875
+        },
+        {
+         "task": "horn",
+         "distance": 0.2753654224702679,
+         "contact": 0.29375
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local_cueblind",
+     "seed": 1,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3486602036988908,
+         "contact": 0.00625
+        },
+        {
+         "task": "switch",
+         "distance": 1.4122285253546043,
+         "contact": 0.025
+        },
+        {
+         "task": "light",
+         "distance": 0.8722409294740157,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.4869033675633947,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.38405140948251126,
+         "contact": 0.10625
+        },
+        {
+         "task": "switch",
+         "distance": 1.470082947741808,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.7770713833846844,
+         "contact": 0.01875
+        },
+        {
+         "task": "horn",
+         "distance": 0.9586604814006087,
+         "contact": 0.01875
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.7550705672399312,
+         "contact": 0.03125
+        },
+        {
+         "task": "switch",
+         "distance": 0.30625127521602824,
+         "contact": 0.1125
+        },
+        {
+         "task": "light",
+         "distance": 0.808200238936079,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.11398302155814,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6700447490481907,
+         "contact": 0.075
+        },
+        {
+         "task": "switch",
+         "distance": 0.6434967955555442,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.20806185152416293,
+         "contact": 0.33125
+        },
+        {
+         "task": "horn",
+         "distance": 1.0193670471465262,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.678014529701648,
+         "contact": 0.025
+        },
+        {
+         "task": "switch",
+         "distance": 0.5926647782734602,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.5209036120777413,
+         "contact": 0.0125
+        },
+        {
+         "task": "horn",
+         "distance": 0.24412675363498143,
+         "contact": 0.2125
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local_cueblind",
+     "seed": 2,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.2474228662250262,
+         "contact": 0.01875
+        },
+        {
+         "task": "switch",
+         "distance": 1.484539509528785,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.1879330606950536,
+         "contact": 0.00625
+        },
+        {
+         "task": "horn",
+         "distance": 1.3749299689566417,
+         "contact": 0.025
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.3125259159285601,
+         "contact": 0.11875
+        },
+        {
+         "task": "switch",
+         "distance": 1.555373872791893,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.2193568604107106,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.532507134626289,
+         "contact": 0.03125
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6926739287417253,
+         "contact": 0.00625
+        },
+        {
+         "task": "switch",
+         "distance": 0.18142290333630356,
+         "contact": 0.275
+        },
+        {
+         "task": "light",
+         "distance": 0.8232611863525381,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.0028789717622084,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6953978824134467,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.49610660419009783,
+         "contact": 0.00625
+        },
+        {
+         "task": "light",
+         "distance": 0.17016973141321218,
+         "contact": 0.3625
+        },
+        {
+         "task": "horn",
+         "distance": 1.1302689938411752,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.5489837624494728,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.46659044461423943,
+         "contact": 0.0375
+        },
+        {
+         "task": "light",
+         "distance": 0.674727158482915,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.17220383697782254,
+         "contact": 0.4
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local_cueblind",
+     "seed": 3,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.5028286751724729,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.352092772119874,
+         "contact": 0.00625
+        },
+        {
+         "task": "light",
+         "distance": 0.972367468194145,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3550643868015082,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.2880824578559671,
+         "contact": 0.08125
+        },
+        {
+         "task": "switch",
+         "distance": 1.8208488712613757,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 1.0367625022694127,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.5578272618823892,
+         "contact": 0.01875
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.6993605469272385,
+         "contact": 0.05625
+        },
+        {
+         "task": "switch",
+         "distance": 0.24711767471890553,
+         "contact": 0.26875
+        },
+        {
+         "task": "light",
+         "distance": 0.8161794160651071,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.046083229111685,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.7096685233520622,
+         "contact": 0.01875
+        },
+        {
+         "task": "switch",
+         "distance": 0.5706294663411027,
+         "contact": 0.01875
+        },
+        {
+         "task": "light",
+         "distance": 0.13191447425956276,
+         "contact": 0.49375
+        },
+        {
+         "task": "horn",
+         "distance": 1.0865495111160548,
+         "contact": 0.0
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.47538063999852154,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.5746518041744823,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.3852441266888642,
+         "contact": 0.05
+        },
+        {
+         "task": "horn",
+         "distance": 0.15568675720806802,
+         "contact": 0.4125
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "local_cueblind",
+     "seed": 4,
+     "world": "relative",
+     "parameters": 1160,
+     "phases": [
+      {
+       "after": "untrained",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.3193515449632585,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 1.3400797956871515,
+         "contact": 0.0125
+        },
+        {
+         "task": "light",
+         "distance": 1.021553140933327,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 1.3788654027931317,
+         "contact": 0.0125
+        }
+       ]
+      },
+      {
+       "after": "bell",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 0.31202203789625765,
+         "contact": 0.1125
+        },
+        {
+         "task": "switch",
+         "distance": 1.8509038208127913,
+         "contact": 0.0
+        },
+        {
+         "task": "light",
+         "distance": 0.9854146557915661,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.7303731211993781,
+         "contact": 0.00625
+        }
+       ]
+      },
+      {
+       "after": "switch",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.2413629111528064,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.23600359838801488,
+         "contact": 0.23125
+        },
+        {
+         "task": "light",
+         "distance": 0.9873789914947245,
+         "contact": 0.0
+        },
+        {
+         "task": "horn",
+         "distance": 0.8380716242378716,
+         "contact": 0.01875
+        }
+       ]
+      },
+      {
+       "after": "light",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.2726952526976865,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.2740534606093412,
+         "contact": 0.225
+        },
+        {
+         "task": "light",
+         "distance": 0.1949878322176036,
+         "contact": 0.29375
+        },
+        {
+         "task": "horn",
+         "distance": 0.8066079017660528,
+         "contact": 0.0625
+        }
+       ]
+      },
+      {
+       "after": "horn",
+       "tasks": [
+        {
+         "task": "bell",
+         "distance": 1.2616664424070456,
+         "contact": 0.0
+        },
+        {
+         "task": "switch",
+         "distance": 0.3799149565859537,
+         "contact": 0.11875
+        },
+        {
+         "task": "light",
+         "distance": 0.22744104635309564,
+         "contact": 0.23125
+        },
+        {
+         "task": "horn",
+         "distance": 0.2572324378077423,
+         "contact": 0.35
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "runtime_s": 25.5
+}

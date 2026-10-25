@@ -26,3 +26,33 @@ family (normalized RBF networks, mixtures of local linear experts, locally
 weighted learning). Gating alone is also a weak bar; Masse et al. (2018)
 combined gating with synaptic stabilization. Beating stronger continual-learning
 baselines (EWC, synaptic intelligence, replay) has not been tested.
+
+---
+
+# Part 2: probe learning (written before running it)
+
+Sol's SimplyPutSol v1 learned from scalar probes and forgot (bell 0.029 →
+0.714 with frozen cables), while my v1 kept skills but used a shortcut teacher.
+Part 2 keeps Sol's world, probes, frozen cable body and readout update rule
+exactly, and changes only the readout: shared vs 16 route-local readouts (2
+active, routing on the final frame, tunings start cue-neutral). Not tuned:
+routes=16, active=2, beta=2.5 and the tuning rate are fixed here before any run.
+5 seeds, 650 probe episodes per task, 80 test postures × 2 winds.
+
+Run in two worlds: `anchored` (Sol's: action added to a fixed anchor posture)
+and `relative` (action added to the current posture).
+
+Rules, per world:
+
+- **P0 reproduction.** In the anchored world, `shared` on Sol's seeds 0–2
+  reproduces Sol's published frozen-cable numbers (bell learned 0.029, bell
+  final 0.714, final four-task 0.395) to within 0.005.
+- **P1 learning survives locality.** `local` learns the bell to a distance no
+  worse than 2× `shared`'s just-learned distance (or ≤ 0.06).
+- **P2 retention.** `local` bell final ≤ max(1.5 × bell just learned,
+  just learned + 0.05).
+- **P3 better overall.** `local` final four-task distance lower than `shared`
+  by more than 2 standard errors.
+- **P4 cause.** `local_cueblind` fails P2.
+- **P5 not just more weights.** `local` final four-task distance lower than
+  `shared_big` (readout parameters matched) by more than 2 standard errors.
