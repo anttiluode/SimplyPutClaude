@@ -56,3 +56,51 @@ Rules, per world:
 - **P4 cause.** `local_cueblind` fails P2.
 - **P5 not just more weights.** `local` final four-task distance lower than
   `shared_big` (readout parameters matched) by more than 2 standard errors.
+
+---
+
+# Part 3: the flow loop (written before running it)
+
+The loop: probe a hidden object, read the return with a multiscale reader,
+guess, get told the answer, write the reading into that object's own memory
+route, choose the next probe from what has been learned. The question is
+whether **closing the loop** (choosing probes from memory) beats the same parts
+run open-loop, and which reader is needed to remember **order**.
+
+World: 8 hidden objects in 4 twin pairs. A probe in band b returns two Gabor
+bursts at two bands, in some order. Twins return the same pair of bands on
+every probe, and differ only in the order of the two bursts, and only on some
+bands (3 of 8, different per pair). Timing jitter, amplitude jitter and noise
+on every return. 2 probes per episode, 600 learning episodes, then 400 test
+episodes with no writing. 5 seeds.
+
+Readers: R0 total energy; R1 first-order scattering, globally averaged (a
+spectrum); R2 first + second-order scattering, globally averaged; R3 first
+order + lagged cross-band envelope asymmetry (a minimal joint time-frequency
+statistic).
+
+Policies: random bands; best fixed pair of bands (chosen with full knowledge of
+the world, an open-loop upper bound); closed loop (choose the band where the
+candidate objects' memories disagree most, unknown memory counted as maximal
+disagreement); greedy closed loop (same, but unknown memory counts as zero:
+no curiosity).
+
+Prediction change, stated before running: in the conversation I predicted that
+second-order scattering would see ordering. On reflection it should not:
+globally averaged scattering is invariant to when each band's energy occurs,
+and swapping the order of two bands only moves each band's bump in time. Order
+needs relative timing between bands. Rules:
+
+- **F1 order needs a joint time-frequency reader.** With the closed-loop policy,
+  twin accuracy (correct given the right pair was found) is ≤ 0.65 for R1 and
+  R2, and R3's twin accuracy exceeds R2's by more than 0.25.
+- **F2 closing the loop helps.** With R3, closed-loop test accuracy beats random
+  by more than 2 standard errors.
+- **F3 it beats the best open-loop choice.** With R3, closed-loop test accuracy
+  beats the best fixed pair (chosen with oracle knowledge) by more than 2 SE.
+- **F4 curiosity is necessary.** With R3, the greedy loop (no credit for
+  unknown memory) ends below the curious loop by more than 2 SE.
+
+Known prior art: active learning / optimal experimental design (query by
+disagreement), nearest-class-mean memory, joint time-frequency scattering
+(Andén, Lostanlen, Mallat). Passing would not show novelty.

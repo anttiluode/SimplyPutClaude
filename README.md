@@ -182,6 +182,83 @@ routing removes the retention.
   anchor), so the task is eight constants: four targets × two winds. That's
   why the relative world is included.
 
+## Part 3: the flow loop
+
+The loop from the conversation, built small:
+
+> probe a hidden object → read the return with a multiscale reader → guess →
+> get told the answer → write the reading into that object's own memory
+> route → choose the next probe from what memory says.
+
+**World:** 8 hidden objects in 4 twin pairs. Probing a frequency band makes the
+object return two Gabor bursts at two bands, in some order. Twins return the
+same two bands on every probe, but in reversed order on 3 of 8 bands
+(different bands per pair). Every return has timing jitter, amplitude jitter
+and noise. 2 probes per episode; 600 learning episodes; then 400 test episodes
+with no writing.
+
+**Readers:** R0 total energy; R1 first-order scattering, globally averaged (a
+spectrum); R2 first + second-order scattering; R3 first order + a lagged
+cross-band envelope asymmetry (a minimal joint time-frequency statistic: does
+band i's energy come before or after band j's?).
+
+**Policies:** random bands; the best fixed pair of bands chosen with **oracle**
+knowledge of the world; *curious* closed loop (probe where the candidate
+objects' memories disagree most, never-written memory counting as large
+disagreement); *greedy* closed loop (the same, with no credit for unknown
+memory).
+
+![flow](results_flow/flow.png)
+
+Test accuracy (chance 0.125), 5 seeds:
+
+| Reader | random | oracle fixed pair | curious loop | greedy loop |
+|---|---:|---:|---:|---:|
+| R0 energy | 0.132 | 0.117 | 0.137 | 0.122 |
+| R1 spectrum | 0.439 | 0.447 | 0.496 | 0.415 |
+| R2 2nd-order scattering | 0.450 | 0.418 | 0.493 | 0.469 |
+| **R3 joint time-freq** | 0.757 ± 0.017 | **0.966 ± 0.021** | **0.873 ± 0.037** | 0.741 ± 0.082 |
+
+Twin accuracy (right object, given the right pair was found), curious loop:
+R1 0.50, R2 0.49, **R3 0.95**.
+
+Rules ([`PREREGISTRATION.md`](PREREGISTRATION.md), Part 3):
+
+| Rule | Result |
+|---|---|
+| F1 order needs a joint time-frequency reader | **PASS** |
+| F2 the closed loop beats random probing | **PASS** (0.873 vs 0.757) |
+| F3 the closed loop beats the best fixed pair | **FAIL** (0.873 vs 0.966) |
+| F4 curiosity is necessary | **FAIL** (0.873 vs 0.741, but too variable to separate with 5 seeds) |
+
+**What it shows:**
+
+- **Order needs relative timing between bands.** In the conversation I
+  predicted second-order scattering would see order. Before running, I
+  corrected that: globally averaged scattering can't see *when* each band's
+  energy happens, and swapping two bands only moves each band's bump in time.
+  The corrected prediction held: spectrum and second-order scattering sit at
+  chance on twins (0.49–0.50); the joint reader reaches 0.95. That's the
+  reason joint time-frequency scattering (Andén, Lostanlen, Mallat) exists.
+- **The loop learns which questions to ask.** With identical parts, choosing
+  probes from memory beats random probing (0.87 vs 0.76) and learns faster.
+- **Being told the right questions beats discovering them.** An oracle that
+  knows the world picks one fixed pair of probes that separates every object
+  (0.97). The loop has to find those questions while learning, and pays for
+  it. In a stable world, a good fixed question set wins, much as an innate,
+  evolved reflex can beat learning. The loop should earn its place only where
+  no fixed set of questions covers the world, or where the world changes.
+  That's the next test; it is not run here.
+- **Curiosity: suggestive, not established.** Without credit for unknown
+  memory, the loop sometimes locks onto what it already knows (coverage 0.54,
+  per-seed accuracy anywhere from 0.51 to 0.93). With curiosity it is far more
+  consistent, but 5 seeds don't separate the means.
+
+**One honest weakness,** noted rather than fixed after seeing results: the
+disagreement score sums over every feature dimension, and the order dimensions
+are a minority of them. A better probe chooser (true expected information
+gain) might close part of the gap to the oracle.
+
 ## The natural next step
 
 The capacity sweep shows where this breaks: when every route is taken, new
@@ -195,7 +272,8 @@ testable form.
 pip install -r requirements.txt
 python run_experiment.py        # part 1, ~2 minutes on a CPU, writes results/
 python run_probe_experiment.py  # part 2, ~30 seconds, writes results_probe/
-python -m pytest -q             # 15 tests
+python run_flow_experiment.py   # part 3, ~1 minute, writes results_flow/
+python -m pytest -q             # 19 tests
 ```
 
 Pure NumPy; no GPU needed.
@@ -208,5 +286,7 @@ Pure NumPy; no GPU needed.
 - `run_experiment.py`: the full part 1 protocol, tables, plots
 - `simplyput/probe.py`: part 2, Sol's probe world ported exactly, shared vs local readouts
 - `run_probe_experiment.py`: part 2 protocol, rules, tables, plot
+- `simplyput/flow.py`: part 3, hidden twins, four readers, local memory, probe policies
+- `run_flow_experiment.py`: part 3 protocol, rules, tables, plot
 - `PREREGISTRATION.md`: decision rules written before the main run
 - `tests/`: kinematics, fumble convergence, locality of route updates, no learning during evaluation, probe-world checks
